@@ -46,6 +46,7 @@ form.verify({
                 if (res.status !== 0) {
                     return layer.msg('登陆失败');
                 }
+                console.log('登陆返回');
                 console.log(res);
                 layer.msg('登陆成功');
                 localStorage.setItem('token', res.token);
